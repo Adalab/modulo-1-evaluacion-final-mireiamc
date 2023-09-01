@@ -8,6 +8,7 @@
     top: 0;
     left: 0;
     z-index: 100;
+
     &__menu {
         background-color: $dark-green;
     }
@@ -45,7 +46,7 @@
 
     &__btn {
         background-color: $white;
-        border-radius: 22.5px;
+        border-radius: 100px;
         width: 40px;
         height: 40px;
         padding: 10px;
@@ -54,17 +55,16 @@
 }
 //Revisar como hacer un salto de linea con esto//
 
-.conteiner1__title::first-line {
+/*.conteiner1__title::first-line {
     word-spacing: 100vw;
-  }
+  }*/
   //Hasta aquí//
 
-  .container2 {
-    padding: 15px;
-    padding-top: 34px;
+.container2 {
+    padding: 34px 15px;
 
     &__greentext {
-        color: $light-green;
+        color: $dark-green;
         font-size: 14px;
         font-family: $font-text;
         line-height: 30px;
@@ -76,6 +76,7 @@
         font-family: $font-title;
         line-height: 30px;
         font-weight: 700;
+        margin-bottom: 20px;
     }
 
     &__text {
@@ -85,41 +86,54 @@
         color: $greyish-brown;
         text-align: left;
         height: 181px;
+        margin-bottom: 45px;
     }
 
     &__btn {
-        color: $light-green;
+        display: inline-block;
+        color: $dark-green;
         padding: 12px 28px;
         text-decoration: none;
-        border-radius: 22.5px;
-        border: solid 2px $light-green;
+        border-radius: 50px;
+        border: solid 2px $dark-green;
+        font-family: $font-text;
+        font-size: 20px;
     }
-  }
+}
 
-  .container3 {
+.container3 {
     background-color: $light-green;
-    padding-top: 34px;
-    padding: 15px;
+    padding: 34px 15px;
+    text-align: center;
 
     &__text {
         font-size: 12px;
         font-family: $font-title;
         color: #626262;
         line-height: 30px;
-        text-align: center;
     }
 
     &__title {
         font-size: 20px;
         font-family: $font-title;
         line-height: 30px;
-        text-align: center;
         padding-bottom: 14px;
+    }
+
+    &__btn {
+        background-color: $dark-green;
+        display: inline-block;
+        color: $white;
+        padding: 12px 28px;
+        text-decoration: none;
+        border-radius: 50px;
+        border: solid 2px $dark-green;
+        font-family: $font-text;
+        font-size: 20px;
     }
 
     &__article {
         
-        align-content: center;
         &--img {
             width: 114px;
             border-radius: 50%;
@@ -131,24 +145,57 @@
             font-family: $font-title;
             line-height: 30px;
         }
-    }
+    } 
+}
 
-  }
-
-  .article-container {
+.article-container {
     display: grid;
-        grid-template-columns: 150px;
-        grid-template-rows: 150px 150px 150px;
-        justify-content: center;
-        justify-items: center;
-        text-align: center;
-  }
+    grid-template-columns: 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 15px;
+}
 
 .footer {
     background-color: $greyish-brown;
     color: $white;
     font-size: 16px;
     font-family: $font-text;
-    padding: 15px;
+    padding: 0px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+
+    &__arrow {
+        background-color: $white;
+        border-radius: 100px;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        transform: translateY(-60%);
+    }
+
+    &__menu {
+        text-decoration: none;
+        list-style: none;
+        line-height: 30px;
+        
+        &--item {
+            text-decoration: none;
+            color: $white;
+            font-size: 16px;
+            font-family: $font-text;
+        }
+    }
+
     
+    &__heart {
+        color: $dark-green;
+    }
 }
