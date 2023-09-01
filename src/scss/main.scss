@@ -1,7 +1,154 @@
 @import 'core/variables';
 @import 'core/reset';
-/*@import 'layout/page';
-@import 'layout/header';
-@import 'layout/footer';*/
 
 
+.header {
+    border: $dark-green solid 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    &__menu {
+        background-color: $dark-green;
+    }
+}
+
+.container1 {
+    height: 100vh;
+    background-image: url(../images/cover.jpeg);
+    background-size: cover;
+    background-position: 90%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding:30px;
+
+    &__title {
+        font-size: 30px;
+        color: $white;
+        line-height: 50px;
+        font-family: $font-title;
+        text-align: center;
+    }
+
+    &__text {
+       font-size: 16px;
+       color: $white;
+       line-height: 19px;
+       font-family: $font-text; 
+       text-align: center;
+    }
+
+    &__btn {
+        background-color: $white;
+        border-radius: 22.5px;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        
+    }   
+}
+//Revisar como hacer un salto de linea con esto//
+
+.conteiner1__title::first-line {
+    word-spacing: 100vw;
+  }
+  //Hasta aquí//
+
+  .container2 {
+    padding: 15px;
+    padding-top: 34px;
+
+    &__greentext {
+        color: $light-green;
+        font-size: 14px;
+        font-family: $font-text;
+        line-height: 30px;
+    }
+
+    &__title {
+        color: black;
+        font-size: 22px;
+        font-family: $font-title;
+        line-height: 30px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 18px;
+        font-family: $font-text;
+        line-height: 30px;
+        color: $greyish-brown;
+        text-align: left;
+        height: 181px;
+    }
+
+    &__btn {
+        color: $light-green;
+        padding: 12px 28px;
+        text-decoration: none;
+        border-radius: 22.5px;
+        border: solid 2px $light-green;
+    }
+  }
+
+  .container3 {
+    background-color: $light-green;
+    padding-top: 34px;
+    padding: 15px;
+
+    &__text {
+        font-size: 12px;
+        font-family: $font-title;
+        color: #626262;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-family: $font-title;
+        line-height: 30px;
+        text-align: center;
+        padding-bottom: 14px;
+    }
+
+    &__article {
+        
+        align-content: center;
+        &--img {
+            width: 114px;
+            border-radius: 50%;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        &--text {
+            font-size: 14px;
+            font-family: $font-title;
+            line-height: 30px;
+        }
+    }
+
+  }
+
+  .article-container {
+    display: grid;
+        grid-template-columns: 150px;
+        grid-template-rows: 150px 150px 150px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+  }
+
+.footer {
+    background-color: $greyish-brown;
+    color: $white;
+    font-size: 16px;
+    font-family: $font-text;
+    padding: 15px;
+    
+}
