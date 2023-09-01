@@ -22,37 +22,41 @@
     <section class="container1">
       <h1 class="container1__title">COMIENZOS COMPARTIDOS</h1>
       <p class="container1__text">Todo lo que necesitan para volver al cole con ilusión</p>
-      <a href="">
+      <a href="#vuelta_al_cole">
         <img class="container1__btn" src="./assets/images/ico-scroll-down.svg" alt="arrow">
       </a>
     </section>
 
     <section class="container2" >
-      <p class="container2__greentext" >HISTORIAS, MODA Y ROPA DEPORTIVA</p>
-      <h2 class="container2__title" >TU TIENDA DE DEPORTE</h2>
-      <p class="container2__text">El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
-      <a href="https://adalab.es/" class="container2__btn">Comprar</a>
+      <section class="wrapper">
+        <p class="container2__greentext" >HISTORIAS, MODA Y ROPA DEPORTIVA</p>
+        <h2 class="container2__title" >TU TIENDA DE DEPORTE</h2>
+        <p class="container2__text">El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+        <a href="https://adalab.es/" class="container2__btn">Comprar</a>
+      </section>
     </section>
 
     <section class="container3">
-      <p class="container3__text">¡Prepáralos con tus marcas favoritas!</p>
-      <h2 class="container3__title">VUELTA AL COLE</h2>
+      <section class="wrapper">
+        <p class="container3__text">¡Prepáralos con tus marcas favoritas!</p>
+        <h2 class="container3__title">VUELTA AL COLE</h2>
 
-      <section class="article-container">
-        <article class="container3__article">
-          <img class="container3__article--img" src="./assets/images/lpbts-mod05-img01-desk.png" alt="">
-          <p clas="container3__article--text" >Mochilas escolares</p>
-        </article>
-        <article class="container3__article">
-          <img class="container3__article--img" src="./assets/images/lpbts-mod05-img04-mob.png" alt="">
-          <p clas="container3__article--text" >Estuches</p>
-        </article>
-        <article class="container3__article">
-          <img class="container3__article--img" src="./assets/images/lpbts-mod05-img03-mob.png" alt="">
-          <p clas="container3__article--text" >Bolsas de deporte</p>
-        </article>
+        <section id="vuelta_al_cole" class="article-container">
+          <article class="container3__article">
+            <img class="container3__article--img" src="./assets/images/lpbts-mod05-img01-desk.png" alt="">
+            <p clas="container3__article--text" >Mochilas escolares</p>
+          </article>
+          <article class="container3__article">
+            <img class="container3__article--img" src="./assets/images/lpbts-mod05-img04-mob.png" alt="">
+            <p clas="container3__article--text" >Estuches</p>
+          </article>
+          <article class="container3__article">
+            <img class="container3__article--img" src="./assets/images/lpbts-mod05-img03-mob.png" alt="">
+            <p clas="container3__article--text" >Bolsas de deporte</p>
+          </article>
+        </section>
+        <a class="container3__btn" href="#">Empezar ahora</a>
       </section>
-      <a class="container3__btn" href="#">Empezar ahora</a>
     </section>
   </main>
   
@@ -60,7 +64,7 @@
     <a class="footer__arrow" href="">
       <img src="./assets/images/ico-arrow.svg" alt="">
     </a>
-    <nav>
+    <section class="footer__container wrapper">
       <ul class="footer__menu" >
         <li><a class="footer__menu--item" href="https://adalab.es">ZAPATILLAS</a></li>
         <li><a class="footer__menu--item" href="https://adalab.es">ROPA</a></li>
@@ -68,19 +72,16 @@
         <li><a class="footer__menu--item" href="https://adalab.es">DESTACADOS</a></li>
         <li><a class="footer__menu--item" href="https://adalab.es">TIPS</a></li>
       </ul>
-    </nav>
-    <nav>
       <ul class="footer__menu">
         <li><a class="footer__menu--item" href="https://adalab.es">TWITTER</a></li>
         <li><a class="footer__menu--item" href="https://adalab.es">INSTAGRAM</a></li>
         <li><a class="footer__menu--item" href="https://adalab.es">YOUTUBE</a></li>
       </ul>
-    </nav>
-    <section class="footer__copy">
-      <p>&copy; 2023</p>
-      <p>We <span class="footer__heart">&hearts;</span> run</p>
+      <section class="footer__copy">
+        <p>&copy; 2023</p>
+        <p>we <span class="footer__heart">&hearts;</span> run</p>
+      </section>
     </section>
-    
   </footer>
 
 </body>

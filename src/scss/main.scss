@@ -1,6 +1,11 @@
 @import 'core/variables';
 @import 'core/reset';
 
+.wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 940px;
+}
 
 .header {
     border: $dark-green solid 15px;
@@ -18,14 +23,14 @@
     height: 100vh;
     background-image: url(../images/cover.jpeg);
     background-size: cover;
-    background-position: 90%;
+    background-position: 85%;
     background-repeat: no-repeat;
     z-index: -1;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     padding:30px;
 
     &__title {
@@ -34,7 +39,19 @@
         line-height: 50px;
         font-family: $font-title;
         text-align: center;
+
+        @media all and (min-width: 768px) {
+            font-size: 50px;
+            line-height: 100px;
+        }
+        @media all and (min-width: 1280px) {
+            font-size: 75px;
+        }
     }
+
+    &__title::first-line {
+        word-spacing: 100vw;
+        }
 
     &__text {
        font-size: 16px;
@@ -42,6 +59,11 @@
        line-height: 19px;
        font-family: $font-text; 
        text-align: center;
+
+       @media all and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 28px;
+        }
     }
 
     &__btn {
@@ -53,21 +75,26 @@
         
     }   
 }
-//Revisar como hacer un salto de linea con esto//
-
-/*.conteiner1__title::first-line {
-    word-spacing: 100vw;
-  }*/
-  //Hasta aquí//
 
 .container2 {
     padding: 34px 15px;
+    @media all and (min-width: 768px) {
+        vertical-align: center;
+    }
+    @media all and (min-width: 1280px) {
+        
+    }
 
     &__greentext {
         color: $dark-green;
         font-size: 14px;
         font-family: $font-text;
         line-height: 30px;
+
+        @media all and (min-width: 768px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
     }
 
     &__title {
@@ -77,6 +104,11 @@
         line-height: 30px;
         font-weight: 700;
         margin-bottom: 20px;
+
+        @media all and (min-width: 768px) {
+            font-size: 32px;
+            line-height: 45px;
+        }
     }
 
     &__text {
@@ -85,14 +117,18 @@
         line-height: 30px;
         color: $greyish-brown;
         text-align: left;
-        height: 181px;
-        margin-bottom: 45px;
+        margin-bottom: 40px;
+
+        @media all and (min-width: 768px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
 
     &__btn {
         display: inline-block;
         color: $dark-green;
-        padding: 12px 28px;
+        padding: 12px 40px;
         text-decoration: none;
         border-radius: 50px;
         border: solid 2px $dark-green;
@@ -111,6 +147,11 @@
         font-family: $font-title;
         color: #626262;
         line-height: 30px;
+
+        @media all and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 30px;
+        }
     }
 
     &__title {
@@ -118,6 +159,11 @@
         font-family: $font-title;
         line-height: 30px;
         padding-bottom: 14px;
+
+        @media all and (min-width: 768px) {
+            font-size: 28px;
+            line-height: 45px;
+        }
     }
 
     &__btn {
@@ -130,6 +176,10 @@
         border: solid 2px $dark-green;
         font-family: $font-text;
         font-size: 20px;
+
+        @media all and (min-width: 768px) {
+            margin-top: 20px;
+        }
     }
 
     &__article {
@@ -144,6 +194,11 @@
             font-size: 14px;
             font-family: $font-title;
             line-height: 30px;
+
+            @media all and (min-width: 768px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
         }
     } 
 }
@@ -156,6 +211,12 @@
     justify-items: center;
     text-align: center;
     gap: 15px;
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+    }
 }
 
 .footer {
@@ -164,27 +225,43 @@
     font-size: 16px;
     font-family: $font-text;
     padding: 0px 15px 30px 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
     text-align: center;
-    gap: 20px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+
+        @media all and (min-width: 768px) {
+            flex-direction: row-reverse;
+            align-items: baseline;
+            justify-content: space-evenly;
+        }
+    }
 
     &__arrow {
+        display: inline-block;
         background-color: $white;
         border-radius: 100px;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         padding: 8px;
-        transform: translateY(-60%);
+        transform: translateY(-50%);
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     }
 
     &__menu {
         text-decoration: none;
         list-style: none;
         line-height: 30px;
+
+        @media all and (min-width: 768px) {
+            width: 150px;
+        }
         
         &--item {
             text-decoration: none;
@@ -193,8 +270,12 @@
             font-family: $font-text;
         }
     }
+    &__copy {
+        @media all and (min-width: 768px) {
+            width: 150px;
+        }
+    }
 
-    
     &__heart {
         color: $dark-green;
     }
