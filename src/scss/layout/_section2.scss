@@ -57,10 +57,7 @@
     }
 }
 
-.container2__btn:hover {background-color: $dark-green}
-
-.container2__btn:active {
-background-color: $greyish-brown;
-box-shadow: 0 5px #666;
-transform: translateY(6px);
-}
+.container2__btn:hover {
+    background-color: #FCF3CF;
+    transform: translateY(5px);
+    }

@@ -1,3 +1,4 @@
+
 .container3 {
     background-color: $light-green;
     padding: 34px 15px;
@@ -42,6 +43,22 @@
         }
     }
 
+    .article-container {
+        display: grid;
+        grid-template-columns: 150px;
+        grid-template-rows: 150px 150px 150px;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+        gap: 15px;
+
+        @media all and (min-width: 768px) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            justify-content: space-evenly;
+        }
+    }
+
     &__article {
         
         &--img {
@@ -63,28 +80,8 @@
     } 
 }
 
-.container3__btn:hover {background-color: $greyish-brown}
-
-.container3__btn:active {
-background-color: $light-green;
-box-shadow: 0 5px #666;
-transform: translateY(6px);
+.container3__btn:hover {
+    background-color: $greyish-brown;
+    transform: translateY(5px);
 }
 
-//Lo he sacado fuera para probar con otra clase y no cambia de estilo, justo con el resto de letras del container3//
-
-.article-container {
-    display: grid;
-    grid-template-columns: 150px;
-    grid-template-rows: 150px 150px 150px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    gap: 15px;
-
-    @media all and (min-width: 768px) {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        justify-content: space-evenly;
-    }
-}

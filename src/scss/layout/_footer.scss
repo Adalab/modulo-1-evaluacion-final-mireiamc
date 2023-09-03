@@ -1,3 +1,20 @@
+@keyframes changeColor {
+    0% {
+        transform: translateY(-50%);
+    }
+    25% {
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(-50%);
+    }
+    75% {
+        transform: translateY(-75%);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+  }
 
 .footer {
     background-color: $greyish-brown;
@@ -33,6 +50,12 @@
         padding: 8px;
         transform: translateY(-50%);
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+    }
+
+    .footer__arrow:hover {
+        background-color: #FCF3CF;
+        animation: changeColor 1300ms infinite;
     }
 
     &__menu {
@@ -63,3 +86,5 @@
         color: $dark-green;
     }
 }
+
+  
