@@ -1,0 +1,90 @@
+.container3 {
+    background-color: $light-green;
+    padding: 34px 15px;
+    text-align: center;
+
+    &__text {
+        font: 12px $font-title;
+        color: #626262;
+        line-height: 30px;
+
+        @media all and (min-width: 768px) {
+            font-size: 12px;
+            line-height: 30px;
+        }
+    }
+
+    &__title {
+        font: 20px $font-title;
+        line-height: 30px;
+        font-weight: 700;
+        padding-bottom: 14px;
+
+        @media all and (min-width: 768px) {
+            font-size: 28px;
+            line-height: 45px;
+        }
+    }
+
+    &__btn {
+        background-color: $dark-green;
+        display: inline-block;
+        color: $white;
+        padding: 12px 28px;
+        text-decoration: none;
+        border-radius: 50px;
+        border: solid 2px $dark-green;
+        font-family: $font-text;
+        font-size: 20px;
+
+        @media all and (min-width: 768px) {
+            margin-top: 20px;
+        }
+    }
+
+    &__article {
+        
+        &--img {
+            width: 114px;
+            border-radius: 50%;
+            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        &--text {
+            font: 14px $font-title;
+            font-weight: 700;
+            line-height: 30px;
+        
+            @media all and (min-width: 768px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+    } 
+}
+
+.container3__btn:hover {background-color: $greyish-brown}
+
+.container3__btn:active {
+background-color: $light-green;
+box-shadow: 0 5px #666;
+transform: translateY(6px);
+}
+
+//Lo he sacado fuera para probar con otra clase y no cambia de estilo, justo con el resto de letras del container3//
+
+.article-container {
+    display: grid;
+    grid-template-columns: 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    gap: 15px;
+
+    @media all and (min-width: 768px) {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: space-evenly;
+    }
+}

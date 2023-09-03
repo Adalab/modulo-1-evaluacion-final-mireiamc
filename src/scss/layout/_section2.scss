@@ -1,0 +1,66 @@
+
+.container2 {
+    padding: 34px 15px;
+    @media all and (min-width: 768px) {
+        vertical-align: center;
+    }
+    @media all and (min-width: 1280px) {
+        
+    }
+
+    &__greentext {
+        color: $dark-green;
+        font: 14px $font-text;
+        line-height: 30px;
+
+        @media all and (min-width: 768px) {
+            font-size: 16px;
+            line-height: 30px;
+        }
+    }
+
+    &__title {
+        color: black;
+        font: 22px $font-title;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+
+        @media all and (min-width: 768px) {
+            font-size: 32px;
+            line-height: 45px;
+        }
+    }
+
+    &__text {
+        font: 18px $font-text;
+        line-height: 30px;
+        color: $greyish-brown;
+        text-align: left;
+        margin-bottom: 40px;
+
+        @media all and (min-width: 768px) {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        color: $dark-green;
+        padding: 12px 40px;
+        text-decoration: none;
+        border-radius: 50px;
+        border: solid 2px $dark-green;
+        font-family: $font-text;
+        font-size: 20px;
+    }
+}
+
+.container2__btn:hover {background-color: $dark-green}
+
+.container2__btn:active {
+background-color: $greyish-brown;
+box-shadow: 0 5px #666;
+transform: translateY(6px);
+}
