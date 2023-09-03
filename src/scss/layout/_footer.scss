@@ -1,20 +1,3 @@
-@keyframes changeColor {
-    0% {
-        transform: translateY(-50%);
-    }
-    25% {
-        transform: translateY(-100%);
-    }
-    50% {
-        transform: translateY(-50%);
-    }
-    75% {
-        transform: translateY(-75%);
-    }
-    100% {
-        transform: translateY(-50%);
-    }
-  }
 
 .footer {
     background-color: $greyish-brown;
