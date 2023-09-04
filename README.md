@@ -16,4 +16,4 @@ El proyecto se divide en varias secciones de contenido, cada una diseñada y des
 
 - **Flexbox y Grid Layout**: He aprovechado las propiedades de Flexbox y Grid Layout para crear diseños flexibles y receptivos en todo el proyecto. Esto garantiza que la página se vea bien en diferentes tamaños de pantalla.
 
-**Efectos de Hover con `transform`**: Los botones en este proyecto presentan efectos de hover que utilizan la propiedad `transform`. Al pasar el ratón por encima de los botones, experimentarás animaciones suaves que mejoran la interactividad y la experiencia del usuario.
+- **Efectos de Hover con `transform`**: Los botones en este proyecto presentan efectos de hover que utilizan la propiedad `transform`. Al pasar el ratón por encima de los botones, experimentarás animaciones suaves que mejoran la interactividad y la experiencia del usuario.
